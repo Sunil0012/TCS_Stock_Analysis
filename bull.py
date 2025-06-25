@@ -156,7 +156,7 @@ else:
 
 
 # --- Sidebar ---
-st.sidebar.image("https://raw.githubusercontent.com/Sunil0012/TCS_Stock_Analysis/main/logo.png", width=200)
+st.sidebar.image("https://raw.githubusercontent.com/Sunil0012/TCS_Stock_Analysis/main/Screenshot%202025-06-25%20031247.png")
 st.sidebar.title("BullLens")
 st.sidebar.markdown("Your data-driven lens into bullish trends 📈")
 
