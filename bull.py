@@ -17,7 +17,7 @@ from tqdm import tqdm
 st.set_page_config(page_title="BullLens", layout="wide")
 
 # --- Load Data ---
-df = pd.read_csv(r"C:\Users\sunil\Downloads\TCS Project\TCS_stock_history.csv")
+df = pd.read_csv("/workspaces/TCS_Stock_Analysis/TCS_stock_history.csv")
 df['Date'] = pd.to_datetime(df['Date'])
 df.sort_values("Date", inplace=True)
 
@@ -154,12 +154,12 @@ else:
 
 
 # --- Sidebar ---
-st.sidebar.image(r"C:\Users\sunil\Downloads\TCS Project\Screenshot 2025-06-25 031247.png", width=200)
+st.sidebar.image("/workspaces/TCS_Stock_Analysis/Screenshot 2025-06-25 031247.png", width=200)
 st.sidebar.title("BullLens")
 st.sidebar.markdown("Your data-driven lens into bullish trends 📈")
 
 # --- Tabs ---
-tabs = st.tabs(["📊 Live Chart", "🔮 Predictions", "📈 Indicators", "📉 Volatility", "ℹ️ About"])
+tabs = st.tabs(["📊 Live Chart", "🔮 Predictions", "📈 Indicators", "📉 Volatility", "ℹ About"])
 
 # =====================
 # 1. Live Chart
@@ -217,17 +217,17 @@ with tabs[3]:
 with tabs[4]:
     st.subheader("About BullLens")
     st.markdown("""
-    **BullLens** is a stock market analytics platform powered by machine learning.
+    *BullLens* is a stock market analytics platform powered by machine learning.
     This app uses data from Tata Consultancy Services (TCS) to analyze trends and predict stock movements.
 
-    **Tech Stack:**
+    *Tech Stack:*
     - Streamlit (Frontend)
     - Scikit-learn, TensorFlow (Backend ML models)
     - Plotly (Interactive visualizations)
 
-    **Models Used:**
+    *Models Used:*
     - Linear Regression for baseline forecasting
     - LSTM (Long Short-Term Memory) for sequential pattern prediction
     
-    Created with ❤️ by Sunil Naik
+    Created with ❤ by Sunil Naik
     """)
