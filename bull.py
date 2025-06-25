@@ -17,7 +17,7 @@ from tqdm import tqdm
 st.set_page_config(page_title="BullLens", layout="wide")
 
 # --- Load Data ---
-df = pd.read_csv("/workspaces/TCS_Stock_Analysis/TCS_stock_history.csv")
+df = pd.read_csv("https://github.com/Sunil0012/TCS_Stock_Analysis/blob/main/TCS_stock_history.csv")
 df['Date'] = pd.to_datetime(df['Date'])
 df.sort_values("Date", inplace=True)
 
