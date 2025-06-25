@@ -1,8 +1,7 @@
 streamlit
 pandas
-tensorflow
+numpy
 plotly
 scikit-learn
+tensorflow
 tqdm
-numpy
-datetime
