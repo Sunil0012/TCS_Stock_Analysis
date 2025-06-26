@@ -12,9 +12,9 @@ from sklearn.preprocessing import MinMaxScaler
 import datetime
 
 # Load data
-history_df = pd.read_csv(r"C:\Users\sunil\Downloads\TCS_stock_history.csv")
-action_df = pd.read_csv(r"C:\Users\sunil\Downloads\TCS_stock_action.csv")
-info_df = pd.read_csv(r"C:\Users\sunil\Downloads\TCS_stock_info.csv")
+action_df = pd.read_csv("https://raw.githubusercontent.com/Sunil0012/TCS_Stock_Analysis/blob/main/TCS_stock_action.csv")
+history_df = pd.read_csv("https://raw.githubusercontent.com/Sunil0012/TCS_Stock_Analysis/blob/main/TCS_stock_history.csv")
+info_df = pd.read_csv("https://raw.githubusercontent.com/Sunil0012/TCS_Stock_Analysis/blob/main/TCS_stock_info.csv")
 
 # Preprocess date and sort
 history_df['Date'] = pd.to_datetime(history_df['Date'])
